@@ -1,67 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+:root{
+    --primary-color: hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-card-color: hsl(0, 0%, 98%);
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
     margin: 0;
-    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body.dark{
+    --text-color: hsl(0, 0%, 83%);
+    --bg-color: hsl(0, 0%, 15%);
+    --bg-card-color: hsl(0, 0%, 20%);
 }
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    padding: 0 1.5em;
+    background-color: var(--bg-card-color);
 }
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.switches{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-header p {
-    margin: 5px 0;
-    font-size: 1.2em;
-    color: #777;
+.toggle-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-
-section {
-    margin-bottom: 20px;
+.toggle-theme__icons{
+    margin-right: 0.5em;
+    width: 19px;
 }
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-
-.job, .school {
-    margin-bottom: 15px;
-}
-
-.job h3, .school h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.toggle-theme__text{
+    font-size: 0.7em;
 }

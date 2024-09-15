@@ -1,57 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Nombre Completo</h1>
-            <p>Profesión o Título</p>
-        </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio gonzalo</title>
+  </head>
+  <body class="dark">
+    <header class="header">
+      <div class="switches">
+        <div id="toggle-theme"class="toggle-theme">
+          <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icons">
+          <p id="toggle-text" class="toggle-theme__text">dark mode</p>
+        </div>
+      </div>
+      <div class="colors">
+        <div class="colors_item colors__item--blue" ></div>
+        <div class="colors_item colors__item--green" ></div>
+        <div class="colors_item colors__item--purple" ></div>
+        <div class="colors_item colors__item--orange" ></div>       
+      </div>
 
-        <section class="profile">
-            <h2>Perfil</h2>
-            <p>Descripción breve sobre ti, tus habilidades y lo que ofreces.</p>
-        </section>
-
-        <section class="experience">
-            <h2>Experiencia Laboral</h2>
-            <div class="job">
-                <h3>Nombre del Trabajo</h3>
-                <p><strong>Empresa</strong> | Fechas</p>
-                <p>Descripción de las responsabilidades y logros en este puesto.</p>
-            </div>
-            <div class="job">
-                <h3>Nombre del Trabajo</h3>
-                <p><strong>Empresa</strong> | Fechas</p>
-                <p>Descripción de las responsabilidades y logros en este puesto.</p>
-            </div>
-        </section>
-
-        <section class="education">
-            <h2>Educación</h2>
-            <div class="school">
-                <h3>Título Obtenido</h3>
-                <p><strong>Institución</strong> | Fechas</p>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Habilidad 1</li>
-                <li>Habilidad 2</li>
-                <li>Habilidad 3</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Contacto: <a href="mailto:correo@example.com">correo@example.com</a></p>
-        </footer>
-    </div>
-</body>
+    </header>
+    <script src="scripts.js"></script>
+  </body>
 </html>
