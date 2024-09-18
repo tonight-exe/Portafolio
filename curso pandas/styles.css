@@ -12,6 +12,7 @@
 }
 img{
     width: 100%;
+    display: block;
 }
 body{
     margin: 0;
@@ -53,6 +54,7 @@ body.dark{
 }
 .main{
     display: grid;
+    padding: 2em;
 }
 @media screen and (min-width:720px) {
     .main{grid-template-columns: min-content 1fr;
@@ -62,4 +64,30 @@ body.dark{
     padding: 1em;
     border-radius: var(--border-radius);
     background-color: var(--bg-card-color);
+}
+.card__img-container{
+    min-width: 320px;
+    border-radius: var(--border-radius) ;
+    overflow: hidden;
+}
+.card__header{
+    padding: 1em 0;
+}
+.card__title{
+    margin: 0;
+    font-size: 1.2rem;
+}
+.card__subtitle{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.card__link{
+    margin-bottom: 0.5em;
+}
+.card__text{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.icon{
+    margin-right: 1em;
 }
