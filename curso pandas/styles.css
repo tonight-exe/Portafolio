@@ -162,8 +162,8 @@ body.dark{
     border-radius: 11px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 15px -5px,
     rgba(0, 0, 0, 0.05) 0px 19px 6px -2px;
-    margin-bottom: 15px;
-    color: rgb(75, 160, 160);
+    margin-bottom: 20px;
+    color: var(--text-color);
     
     
 } 
