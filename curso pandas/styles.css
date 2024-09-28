@@ -6,7 +6,6 @@
     --transition: color 0.1s, background-color 0.2s ease-in-out;
     --border-radius: 0.4em;
     --skills-bar: 0%;
-
 }
 *{
     box-sizing: border-box;
@@ -74,7 +73,7 @@ body.dark{
 }
 .skills__tech{
     display: flex;
-    margin: 10px;
+    margin: px;
 }
 .card{
     padding: 1em;
@@ -109,7 +108,7 @@ body.dark{
     padding: 1em 0;
 }
 .skills__item{
-    font-size: 0.8rem;
+    font-size: 0.rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,4 +143,75 @@ body.dark{
 .icon{
     margin-right: 1em;
 }
+.icon__better{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.icon-2{
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 15px -5px,
+    rgba(0, 0, 0, 0.05) 0px 19px 6px -2px;
+    margin-bottom: 15px;
+    color: rgb(75, 160, 160);
+    
+    
+} 
+.icon-2 > i{
+    font-size: 1.3rem;
+    transition: all 0.2s;
+}
+.icon-2:hover > i {
+    scale: 1.2;
+    color: #f1f1f1;
+    
+}
+.icon-2::before{
+    background: var(--color);
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+.icon-2:hover::before{
+    animation: slide 0.7s forwards;
+}
+@keyframes slide{
+    50%{
+        left: 10%;
+        top: -40%;
+}
+    100%{
+        left: -15%;
+        top: -15%;
 
+    }
+}
+.icon-2:has(.fa-instagram) {
+    --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+.icon-2:has(.fa-whatsapp) {
+    --color: #3fbb3f;
+}
+.icon-2:has(.fa-youtube) {
+    --color: #ff0000;
+}
+.icon-2:has(.fa-discord) {
+    --color: #3526b9;
+}
+.icon-2:has(.fa-github) {
+    --color: #6b6a6a;
+}
