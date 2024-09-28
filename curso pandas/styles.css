@@ -72,10 +72,15 @@ body.dark{
     
     } 
 }
+.skills__tech{
+    display: flex;
+    margin: 10px;
+}
 .card{
     padding: 1em;
     border-radius: var(--border-radius);
     background-color: var(--bg-card-color);
+    margin: 0px 10px;
 }
 .card__img-container{
     min-width: 320px;
