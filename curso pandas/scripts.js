@@ -12,3 +12,9 @@ toggletheme.addEventListener("click", ()=>{
         toggletext.textContent = "dark mode";
     }
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+    const profileCard = document.querySelector(".card--profile");
+    const parent = profileCard.parentElement;
+    parent.insertBefore(profileCard, parent.firstChild);
+});

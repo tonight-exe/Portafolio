@@ -10,11 +10,19 @@
   </head>
   <body class="dark">
     <header class="header">
-      <div class="switches">
+      <div class="header__container">
         <div id="toggle-theme"class="toggle-theme">
           <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icons">
           <p id="toggle-text" class="toggle-theme__text">dark mode</p>
         </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#about" class="header__nav-link">Sobre mí</a></li>
+            <li class="header__nav-item"><a href="#projects" class="header__nav-link">Proyectos</a></li>
+            <li class="header__nav-item"><a href="#skills" class="header__nav-link">Habilidades</a></li>
+            <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -32,20 +40,9 @@
           <div class="icon__better">
             <a href="#" class="icon-2"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="icon-2"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="icon-2"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/tonight-exe" class="icon-2"><i class="fa-brands fa-github"></i></a>
             <a href="#" class="icon-2"><i class="fa-brands fa-discord"></i></a>
           </div>
-
-          <div class="card__body">
-            <div class="card__link">
-              <i class="fa-solid fa-envelope icon"></i>
-              <a href="gonzalo.gomez.agg@gmail.com">gonzalo.gomez.agg@gmail.com</a>
-            </div>
-
-            <div class="card__link">
-              <i class="fa-solid fa-phone icon"></i>
-              <a href="tel:20489265">+56920489265</a>
-            </div>
 
             <p class="card_text">
               Soy un desarrollador web con experiencia en diseño y desarrollo de aplicaciones web. Me apasiona
@@ -55,75 +52,74 @@
 
           </div>
         </article>
-        <article class="card card--experience">
-          <h2 class="card__title">
-            <div class="experience">
-              <img src="" alt="logo" class="experience__image">
-              <div class="experience__info">
-                 
-              </div>
-            </div>
-          </h2>
+        <article class="card card--hobbies">
+          <h2 class="card__title">Pasatiempos</h2>
+          <div class="card__img-container">
+            <img src="assets/icons/electronic.jpg" alt="electronic">
+          </div>
+          <h3 class="hobbie__tittle">Electronica</h3>
+          <p class="card__text">En mi tiempo libre a veces empiezo a areglar comoponentes electronicos
+             o simplemente a trabajr con arduino</p>
+          
         </article>
       </section>
-
       <section class="column column--right">
-        <article class="card">
-          <h2 class="card__title">desarrollador web</h2>
-          <div class="skills">
-            <div class="skills__item">
-              <p class="skills__tech">HTML</p>
-              <div class="skills__bar skills__bar--60"></div>
+        <!--tarjeta de habilidades-->
+        <article class="card card--skills">
+          <h2 class="card__title">Front-end</h2>
+          <div class="skill">
+            <p>HTML</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
             </div>
-            <div class="skills__item">
-              <p class="skills__tech">CSS</p>
-              <div class="skills__bar skills__bar--35"></div>
+          </div>
+          <div class="skill">
+            <p>CSS</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
             </div>
-            <div class="skills__item">
-              <p class="skills__tech">JS</p>
-              <div class="skills__bar skills__bar--25"></div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>React</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 30%;"></div>
             </div>
           </div>
         </article>
-
-        <article class="card">
-          <h2 class="card__title">Base de datos</h2>
-          <div class="skills">
-            <div class="skills__item">
-              <p class="skills__tech">SQL</p>
-              <div class="skills__bar skills__bar--60"></div>
-            </div>
-            <div class="skills__item">
-              <p class="skills__tech">NoSQL</p>
-              <div class="skills__bar skills__bar--35"></div>
-            </div>
-            <div class="skills__item">
-              <p class="skills__tech">MongoDB</p>
-              <div class="skills__bar skills__bar--25"></div>
+        <article class="card card--skills">
+          <h2 class="card__title">Back-end</h2>
+          <div class="skill">
+            <p>MySQL</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%;"></div>
             </div>
           </div>
-        </article>
-
-        <article class="card">
-          <h2 class="card__title">Programacion</h2>
-          <div class="skills">
-            <div class="skills__item">
-              <p class="skills__tech">Python</p>
-              <div class="skills__bar skills__bar--60"></div>
+          <div class="skill">
+            <p>Cypher</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
             </div>
-            <div class="skills__item">
-              <p class="skills__tech">Java</p>
-              <div class="skills__bar skills__bar--35"></div>
+          </div>
+          <div class="skill">
+            <p>MongoDB</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%;"></div>
             </div>
-            <div class="skills__item">
-              <p class="skills__tech">C++</p>
-              <div class="skills__bar skills__bar--25"></div>
+          </div>
+          <div class="skill">
+            <p>SQL</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
             </div>
           </div>
         </article>
       </section>
-     
-
     </main>
     <script src="scripts.js"></script>
     
