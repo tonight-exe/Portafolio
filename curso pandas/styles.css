@@ -279,14 +279,13 @@ body.dark{
 }
 
 .card--project img {
-    width: 100%;
-    height: auto;
+    width: 100px 0 100px;
     border-radius: 8px;
     margin-bottom: 0.5em;
 }
 
 .card--project .card__title {
     font-size: 1.2em;
-    margin: 0;
+    margin: 1em 0;
     color: var(--text-color);
 }
